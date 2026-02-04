@@ -6,37 +6,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Serif:ital@1&family=Orbitron:wght@400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>World Clock</title>
   </head>
   <body>
-    <div class="container">
-      <h1>World clocks</h1>
-      <img
-        src="src/julep-glasslogo.png"
-        alt=""
-        href="https://julepdesign.com"
-        target="_blank"
-        class="logo"
-      />
+    <div class="world-clock">
+      <h1>World clock</h1>
       <select name="" id="">
         <option value="">Select a city</option>
         <option value="">London</option>
         <option value="">New York</option>
         <option value="">Auckland</option>
       </select>
-      <div class="city">
-        <h2>Los Angeles 🇺🇸</h2>
-        <div class="date">February 4th 2026</div>
-        <div class="time">02:49:52 pm</div>
+      <div class="clock-container">
+        <div class="location">
+          <div class="date">February 4th 2026</div>
+          <h2>Los Angeles</h2>
+        </div>
+        <div class="time">08:18:12 <em>am</em></div>
       </div>
-      <div class="city">
-        <h2>Madrid 🇪🇸</h2>
-        <div class="date">February 4th 2026</div>
-        <div class="time">02:49:52 pm</div>
+      <div class="clock-container">
+        <div class="location">
+          <div class="date">February 4th 2026</div>
+          <h2>Madrid</h2>
+        </div>
+        <div class="time">05:18:12 <em>pm</em></div>
+      </div>
+      <div class="clock-container">
+        <div class="location">
+          <div class="date">February 4th 2026</div>
+          <h2>Bangkok</h2>
+        </div>
+        <div class="time">11:18:12 <em>pm</em></div>
       </div>
     </div>
     <footer>
