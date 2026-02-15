@@ -28,8 +28,15 @@ function updateTime() {
 function updateCity(event) {
   let selectedOption = event.target.selectedOptions[0];
   if (!selectedOption.value) return;
-  let cityTimeZone = selectedOption.value;
-  let cityName = selectedOption.dataset.city;
+  let cityTimeZone;
+  let cityName;
+  if (selectedOption.value === "current") {
+    cityTimeZone = moment.tz.guess();
+    cityName = cityTimeZone.split("/").pop().replace("_", " ");
+  } else {
+    cityTimeZone = selectedOption.value;
+    cityName = selectedOption.dataset.city;
+  }
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
