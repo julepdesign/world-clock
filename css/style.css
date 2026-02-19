@@ -72,6 +72,22 @@ em {
   opacity: 0.4;
 }
 
+.cities-link {
+  margin-top: 20px;
+  font-style: italic;
+  line-height: 5;
+  text-decoration: none;
+  cursor: pointer;
+  animation: 1.8ms ease-in-out;
+  background-color: #d42d02;
+  color: blanchedalmond;
+  border: none;
+  padding: 4px 26px;
+  border-radius: 20px;
+}
+.cities-link:hover {
+  font-style: normal;
+}
 footer {
   color: #d1a79d;
   margin-top: 40px;
